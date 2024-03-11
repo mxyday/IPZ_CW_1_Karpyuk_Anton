@@ -66,7 +66,7 @@ fun Card(name: String, ) {
             )
         }
         Column {
-            Row {
+            Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
                     painter = painterResource(id = R.drawable.flower),
                     contentDescription = "Settings Icon",
@@ -78,10 +78,10 @@ fun Card(name: String, ) {
                     text = "+00 (00) 000 000",
                     modifier = Modifier
                         .padding(5.dp),
-                    fontSize = 24.sp
+                    fontSize = 20.sp
                 )
             }
-            Row {
+            Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
                     painter = painterResource(id = R.drawable.flower),
                     contentDescription = "Settings Icon",
@@ -93,10 +93,10 @@ fun Card(name: String, ) {
                     text = "@socialmediahandle",
                     modifier = Modifier
                         .padding(5.dp),
-                    fontSize = 24.sp
+                    fontSize = 20.sp
                 )
             }
-            Row {
+            Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
                     painter = painterResource(id = R.drawable.flower),
                     contentDescription = "Settings Icon",
@@ -108,7 +108,7 @@ fun Card(name: String, ) {
                     text = "email@domail.com",
                     modifier = Modifier
                         .padding(5.dp),
-                    fontSize = 24.sp
+                    fontSize = 20.sp
                 )
             }
         }
