@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
@@ -43,7 +44,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Card(name: String, ) {
-    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(top = 150.dp)) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Image(
                 painter = painterResource(id = R.drawable.flower),
@@ -65,6 +66,7 @@ fun Card(name: String, ) {
                 fontSize = 24.sp
             )
         }
+        Spacer(modifier = Modifier.height(100.dp))
         Column {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
@@ -119,6 +121,12 @@ fun Card(name: String, ) {
 @Composable
 fun CardPreview() {
     IPZ_CW_1_Karpyuk_AntonTheme {
-        Card("")
+        // A surface container using the 'background' color from the theme
+        Surface(
+            modifier = Modifier.fillMaxSize(),
+            color = MaterialTheme.colorScheme.background
+        ) {
+            Card("Karpyuk Anton")
+        }
     }
 }
