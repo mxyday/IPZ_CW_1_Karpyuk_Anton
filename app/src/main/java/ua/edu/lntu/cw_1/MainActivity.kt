@@ -81,6 +81,36 @@ fun Card(name: String, ) {
                     fontSize = 24.sp
                 )
             }
+            Row {
+                Image(
+                    painter = painterResource(id = R.drawable.flower),
+                    contentDescription = "Settings Icon",
+                    modifier = Modifier
+                        .width(50.dp)
+                        .padding(5.dp)
+                )
+                Text(
+                    text = "@socialmediahandle",
+                    modifier = Modifier
+                        .padding(5.dp),
+                    fontSize = 24.sp
+                )
+            }
+            Row {
+                Image(
+                    painter = painterResource(id = R.drawable.flower),
+                    contentDescription = "Settings Icon",
+                    modifier = Modifier
+                        .width(50.dp)
+                        .padding(5.dp)
+                )
+                Text(
+                    text = "email@domail.com",
+                    modifier = Modifier
+                        .padding(5.dp),
+                    fontSize = 24.sp
+                )
+            }
         }
     }
 }
