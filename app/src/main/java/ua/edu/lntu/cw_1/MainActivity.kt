@@ -43,8 +43,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Card(name: String, ) {
-    Column {
-        Column(modifier = Modifier) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Image(
                 painter = painterResource(id = R.drawable.flower),
                 contentDescription = "Settings Icon",
